@@ -4,9 +4,7 @@
   "description": "global handler to setup and run firebase releated and deploy related commands",
   "main": "index.js",
   "scripts": {
-    "deploy-whole-app": "firebase deploy",
-    "deploy-client": "firebase deploy --only hosting",
-    "deploy-server": "firebase deploy --only functions",
+    "deploy": "cd client && npm run build && cd .. && firebase deploy",
     "serve-local": "firebase serve --only functions,hosting"
   },
   "repository": {
