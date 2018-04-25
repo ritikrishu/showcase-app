@@ -1,0 +1,30 @@
+{
+  "name": "showcase-app",
+  "version": "1.0.0",
+  "description": "global handler to setup and run firebase releated and deploy related commands",
+  "main": "index.js",
+  "scripts": {
+    "deploy-whole-app": "firebase deploy",
+    "deploy-client": "firebase deploy --only hosting",
+    "deploy-server": "firebase deploy --only functions",
+    "serve-local": "firebase serve --only functions,hosting"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/UdacityMobileWebScholarship/showcase-app.git"
+  },
+  "keywords": [
+    "Udacity",
+    "Google",
+    "Mobile",
+    "Web",
+    "Scholarship",
+    "Showcase App",
+    "PWA"
+  ],
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/UdacityMobileWebScholarship/showcase-app/issues"
+  },
+  "homepage": "https://github.com/UdacityMobileWebScholarship/showcase-app#readme"
+}
